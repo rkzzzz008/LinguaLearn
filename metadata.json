@@ -1,0 +1,6 @@
+{
+  "name": "LinguaLearn",
+  "description": "Modern language learning app with a 10-level proficiency journey, placement tests, interactive lessons, flashcards, quizzes, and progress analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

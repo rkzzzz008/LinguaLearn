@@ -1,0 +1,21 @@
+﻿// firestore.rules
+// LinguaLearn -- Recommended Firestore Security Rules
+//
+// IMPORTANT: These rules must be deployed via the Firebase Console
+// (or Firebase CLI: firebase deploy --only firestore:rules).
+// They are NOT applied automatically by the Android app.
+//
+// Security model:
+//   - A user can only read/write their own document and sub-collections.
+//   - No cross-user data access is possible.
+//   - Unauthenticated requests are rejected entirely.
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null
+                          && request.auth.uid == userId;
+    }
+  }
+}
