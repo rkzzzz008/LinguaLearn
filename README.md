@@ -211,6 +211,6 @@ A formal open-source license may be added in a future release.
 
 ## 👨‍💻 Author
 
-Developed by **GLR RAGHUL**
+Developed by **Rahulkkrishnan G**
 
 Built with Kotlin, Jetpack Compose, and a passion for accessible language learning.
